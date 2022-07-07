@@ -1,0 +1,27 @@
+<head>
+<style>
+body {
+    margin:0;
+}
+.content {
+    text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+<div>
+    <h1>Hello I'm olex, so nice to meet you</h1>
+    {% for project in projects %}
+    <div class="content">
+        {{project.id }} - {{ project.title }}
+        {{ project.description }}
+        <br>
+        <img src="{{ project.image.url }}" width="300">
+        <br>
+    </div>
+    {% endfor %}
+</div>
+</body>
