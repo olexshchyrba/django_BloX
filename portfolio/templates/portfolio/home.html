@@ -1,11 +1,11 @@
 <head>
 <style>
-body {
-    margin:0;
-}
-.content {
-    text-align: center;
-}
+
+body { margin:0; }
+
+.content { text-align: center; }
+
+h1 { text-align: center; }
 
 </style>
 
@@ -17,11 +17,13 @@ body {
     {% for project in projects %}
     <div class="content">
         {{project.id }} - {{ project.title }}
+        <br>
         {{ project.description }}
         <br>
         <img src="{{ project.image.url }}" width="300">
         <br>
     </div>
+    <br>
     {% endfor %}
 </div>
 </body>
